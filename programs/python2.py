@@ -57,11 +57,8 @@ def one(string):
 def two(num):
     for i in range(1,num+1):
         if num % i == 0:
-            if i != 1 or i!=num:
+            if i != 1 and i!=num:
                 return False
-
-
-    
     return True
 
     # <QUESTION 3>
