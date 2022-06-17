@@ -110,7 +110,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    new =""
+    for i in range(len(string1)):
+        new += string1[i]+string2[i]
+    return new
 
     # <QUESTION 5>
 
