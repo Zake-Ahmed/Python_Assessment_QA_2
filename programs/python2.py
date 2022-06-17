@@ -59,8 +59,10 @@ def two(num):
         if num % i == 0:
             if i != 1 and i!=num:
                 return False
-    return True
 
+    if num ==1:
+        return False
+    return True
     # <QUESTION 3>
 
     # Write a function which takes an integer input, a, and returns the sum a+aa+aaa+aaaa.
