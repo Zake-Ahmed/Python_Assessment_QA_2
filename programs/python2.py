@@ -259,4 +259,11 @@ def nine(string1, string2):
 
 
 def ten(a, b):
-    return
+    nums=[]
+    for i in range(b):
+        list1 = []
+        for j in range(a):
+            list1.append(i*j)
+        nums.append(list1)
+
+    return nums
