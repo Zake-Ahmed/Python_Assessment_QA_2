@@ -32,7 +32,11 @@ import random
 
 
 def one(string):
-    return
+    new=""
+    for i in range(len(string)):
+        new += string[i]*3
+    
+    return new
 
     # <QUESTION 2>
 
@@ -51,8 +55,12 @@ def one(string):
 
 
 def two(num):
-    return
+    for i in range(1,num+1):
+        if num % i == 0:
+            if i != 1 and i!=num:
+                return False
 
+    return True
     # <QUESTION 3>
 
     # Write a function which takes an integer input, a, and returns the sum a+aa+aaa+aaaa.
@@ -69,7 +77,10 @@ def two(num):
 
 
 def three(a):
-    return
+    stringA= str(a)
+
+    
+    return int(stringA)+int(stringA*2)+int(stringA*3)+int(stringA*4)
 
     # <QUESTION 4>
 
@@ -99,7 +110,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return
+    new =""
+    for i in range(len(string1)):
+        new += string1[i]+string2[i]
+    return new
 
     # <QUESTION 5>
 
@@ -117,7 +131,11 @@ def four(string1, string2):
 
 
 def five():
-    return
+    nums = []
+    for i in range(5):
+        i+=1
+        nums.append(random.randrange(100,201,2))
+    return nums
 
     # <QUESTION 6>
 
@@ -137,7 +155,10 @@ def five():
 
 
 def six(string):
-    return
+    string=string.lower()
+    if string[-2:] == 'py':
+        return True
+    return False
 
     # <QUESTION 7>
 
@@ -162,7 +183,11 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    sort = sorted([a,b,c])
+    if sort[0]-sort[1]==sort[1]-sort[2]:
+        return True
+    
+    return False
 
     # <QUESTION 8>
 
@@ -181,7 +206,11 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-    return
+    middle= int((len(string)/2) + 0.5)
+    middleNum = int((num/2) + 0.5)
+    string = string[0:middle-middleNum]+string[middle+middleNum-1:]
+    
+    return string
 
     # <QUESTION 9>
 
@@ -200,7 +229,18 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
-    return
+    if len(string1)<=len(string2):
+        for i in range(len(string1)):
+            if string1[i] not in string2:
+                return False
+    else:
+        for i in range(len(string2)):
+            if string2[i] not in string1:
+                return False
+
+
+        
+    return True
 
     # <QUESTION 10>
 
@@ -219,4 +259,11 @@ def nine(string1, string2):
 
 
 def ten(a, b):
-    return
+    nums=[]
+    for i in range(b):
+        list1 = []
+        for j in range(a):
+            list1.append(i*j)
+        nums.append(list1)
+
+    return nums
