@@ -32,7 +32,11 @@ import random
 
 
 def one(string):
-    return
+    new=""
+    for i in range(len(string)):
+        new += string[i]*3
+    
+    return new
 
     # <QUESTION 2>
 
@@ -51,7 +55,14 @@ def one(string):
 
 
 def two(num):
-    return
+    for i in range(1,num+1):
+        if num % i == 0:
+            if i != 1 or i!=num:
+                return False
+
+
+    
+    return True
 
     # <QUESTION 3>
 
