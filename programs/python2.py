@@ -131,7 +131,11 @@ def four(string1, string2):
 
 
 def five():
-    return
+    nums = []
+    for i in range(5):
+        i+=1
+        nums.append(random.randrange(100,201,2))
+    return nums
 
     # <QUESTION 6>
 
