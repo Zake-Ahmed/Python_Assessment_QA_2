@@ -60,8 +60,6 @@ def two(num):
             if i != 1 and i!=num:
                 return False
 
-    if num ==1:
-        return False
     return True
     # <QUESTION 3>
 
