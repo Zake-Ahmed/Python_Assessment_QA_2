@@ -77,7 +77,10 @@ def two(num):
 
 
 def three(a):
-    return
+    stringA= str(a)
+
+    
+    return int(stringA)+int(stringA*2)+int(stringA*3)+int(stringA*4)
 
     # <QUESTION 4>
 
