@@ -206,7 +206,11 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-    return
+    middle= int((len(string)/2) + 0.5)
+    middleNum = int((num/2) + 0.5)
+    string = string[0:middle-middleNum]+string[middle+middleNum-1:]
+    
+    return string
 
     # <QUESTION 9>
 
