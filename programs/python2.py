@@ -183,7 +183,11 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    sort = sorted([a,b,c])
+    if sort[0]-sort[1]==sort[1]-sort[2]:
+        return True
+    
+    return False
 
     # <QUESTION 8>
 
