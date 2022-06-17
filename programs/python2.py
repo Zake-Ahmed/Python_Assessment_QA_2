@@ -155,7 +155,10 @@ def five():
 
 
 def six(string):
-    return
+    string=string.lower()
+    if string[-2:] == 'py':
+        return True
+    return False
 
     # <QUESTION 7>
 
